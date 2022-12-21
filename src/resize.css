@@ -1,0 +1,210 @@
+@media screen and (max-width: 950px) {
+    .todos .todo input {
+        width: 21;
+    }
+    .case {
+        width: 4.25rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navArea.colapsed section .item.active::before {
+        left: 5%;
+    }
+
+    .navArea.colapsed section .item {
+        padding: .75rem 1.25rem;
+    }
+
+    .navArea.colapsed section .item:active {
+        transform: scale(92%);
+    }
+
+    .navArea.colapsed {
+        box-shadow: none;
+        width: 3.75rem;
+    }
+
+    .navArea {
+        height: 94.5%;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .navArea.colapsed .hamburger {
+        position: relative;
+    }
+
+    .navArea.colapsed .hamburger div:nth-child(1) {
+        width: 13px;
+    }
+
+    .navArea.colapsed .hamburger div:nth-child(2) {
+        width: 18.5px;
+    }
+
+    .navArea.colapsed .hamburger div:nth-child(3) {
+        width: 24px;
+    }
+
+    .navArea section .item img {
+        height: 1.1em;
+    }
+
+    .focus>section {
+        min-width: 100%;
+        padding: .5rem;
+    }
+
+    .focus {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .timerW .focusMode .flex {
+        margin-top: -3rem;
+        transform: scale(90%);
+    }
+
+    .timerW .focusMode .clock-circle {
+        transform: scale(90%);
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 605px) {
+
+    .todos .todo img {
+        height: .9rem;
+        cursor: pointer;
+    }
+
+    .todos .todo input {
+        width: 18rem;
+        padding: .25rem;
+        outline: none;
+        background-color: transparent;
+        border: none;
+    }
+
+    .case {
+        width: 4.25rem;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        overflow: visible;
+        position: absolute;
+        height: 100vh;
+        z-index: 654954846;
+    }
+
+    .navArea {
+        left: 0%;
+        border: .05rem solid rgba(0, 0, 0, 0.1);
+        border-radius: .5rem;
+        width: 50vw;
+        box-shadow: .05rem .5rem 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .navArea.colapsed {
+        box-shadow: none;
+        left: -100%;
+    }
+
+    .timerW>.feature {
+        background-color: #fff;
+        width: 100%;
+        overflow: hidden;
+        padding: .5rem;
+        position: relative;
+        height: 30rem;
+        border-radius: .75rem;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .timerW>.feature.normal {
+        height: 50vmin;
+    }
+
+    .timerW .focusMode .flex {
+        margin-top: -3rem;
+        transform: scale(85%);
+    }
+
+    .timerW .focusMode .clock-circle {
+        transform: scale(85%);
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .timerW>.feature.normal {
+        width: 100%;
+        height: 90vmin;
+    }
+
+    .timerW {
+        grid-template-columns: 1fr;
+        padding: 1rem .5rem;
+    }
+
+    .focus {
+        padding: 1rem .25rem;
+    }
+
+    @keyframes grow {
+        0% {
+            width: calc(49% - .25rem);
+        }
+
+        100% {
+            width: calc(100% - .25rem);
+            height: calc(98.5% - 1rem);
+            opacity: 1;
+            top: 1rem;
+            left: .25rem;
+        }
+    }
+
+    .todos .todo input {
+        width: 12rem;
+        font-size: small;
+        padding: .25rem;
+        outline: none;
+        background-color: transparent;
+        border: none;
+    }
+
+    .mid-section{
+        margin-left: -.75rem;
+    }
+    .mid-section>section span {
+        font-size: .9rem;
+    }
+
+    .mid-section>section h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .todos{
+        padding: 1rem .25rem;
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+    }
+    
+    .alarm .days{
+        gap: .75rem;
+    }
+    
+    .alarm .days li span{
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
